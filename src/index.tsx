@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { logGreeting } from "./utils";
 
-logGreeting()
+logGreeting();
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,

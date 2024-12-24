@@ -1,4 +1,4 @@
-import { Tile, TileAsset } from '../types';
+import { Tile, TileAsset } from "../types";
 
 export interface TileI {
   equal: (tileA: Tile, tileB: Tile) => boolean;

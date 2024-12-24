@@ -1,5 +1,5 @@
-import { Tile } from './Tile';
-import { Move } from './Move';
+import { Tile } from "./Tile";
+import { Move } from "./Move";
 
 export enum DeckState {
   Blocked,

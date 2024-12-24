@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './css/fonts.css';
-@import './css/scrollbar.css';
-@import './css/boardgame.css';
+@import "./css/fonts.css";
+@import "./css/scrollbar.css";
+@import "./css/boardgame.css";
 
 @layer base {
   body {
@@ -14,7 +14,7 @@
   }
 
   code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
   }
 

@@ -1,7 +1,7 @@
-import { BaseSyntheticEvent, useEffect, useState } from 'react';
-import { Tile, Deck, TileGame, TileAsset, Move, Outcome } from '../../types';
-import { TileI } from '../../interfaces';
-import { useDeck } from './useDeck';
+import { BaseSyntheticEvent, useEffect, useState } from "react";
+import { Tile, Deck, TileGame, TileAsset, Move, Outcome } from "../../types";
+import { TileI } from "../../interfaces";
+import { useDeck } from "./useDeck";
 
 export const useTileGame = (tiles: TileAsset[]): TileGame => {
   const { init: initDeck, findTile, processTile, isBlocked } = useDeck();

@@ -1,12 +1,12 @@
-import { ReactComponent as Octocat } from './svg/github.svg';
-import './App.css';
-import useImages from './hooks/tile-game/useImages';
-import TileGameComponent from './components/tile-game/TileGame';
+import { ReactComponent as Octocat } from "./svg/github.svg";
+import "./App.css";
+import useImages from "./hooks/tile-game/useImages";
+import TileGameComponent from "./components/tile-game/TileGame";
 
-import { takeSome } from './utils';
+import { takeSome } from "./utils";
 
-import { useTileAsset } from './hooks/tile-game/useTileAsset';
-import { TileAsset as TileAssetT } from './types';
+import { useTileAsset } from "./hooks/tile-game/useTileAsset";
+import { TileAsset as TileAssetT } from "./types";
 
 function App() {
   const { images } = useImages();

@@ -1,8 +1,8 @@
-import React, { BaseSyntheticEvent, ReactElement } from 'react';
-import TileComponent from './Tile';
-import { Tile, Deck } from '../../types';
-import { TileI } from '../../interfaces';
-import { useDeck } from '../../hooks/tile-game/useDeck';
+import React, { BaseSyntheticEvent, ReactElement } from "react";
+import TileComponent from "./Tile";
+import { Tile, Deck } from "../../types";
+import { TileI } from "../../interfaces";
+import { useDeck } from "../../hooks/tile-game/useDeck";
 
 type BoardProps = {
   deck: Deck;
@@ -51,7 +51,7 @@ export default function BoardComponent({
           grid
           gap-0 aspect-square
           grid-rows-6 grid-cols-6
-          ${extraClasses.join(', ')}
+          ${extraClasses.join(", ")}
         `}
       >
         {_renderTiles(deck.tiles)}
@@ -59,5 +59,5 @@ export default function BoardComponent({
     );
   }
 
-  return _renderTilesContainer(deck, isBlocked(deck) ? ['cursor-none'] : []);
+  return _renderTilesContainer(deck, isBlocked(deck) ? ["cursor-none"] : []);
 }

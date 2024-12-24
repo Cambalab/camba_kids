@@ -1,7 +1,7 @@
-import { v4 } from 'uuid';
-import { Tile, TileState, TileAsset } from '../../types';
-import { TileI } from '../../interfaces';
-import { useTileAsset } from './useTileAsset';
+import { v4 } from "uuid";
+import { Tile, TileState, TileAsset } from "../../types";
+import { TileI } from "../../interfaces";
+import { useTileAsset } from "./useTileAsset";
 
 export const useTile = (): TileI => {
   const { equal: equalTileAssets } = useTileAsset();
@@ -18,7 +18,7 @@ export const useTile = (): TileI => {
   }
 
   function hideTileEffects(tileElement: any): void {
-    tileElement.classList.replace('!grayscale-0', 'grayscale');
+    tileElement.classList.replace("!grayscale-0", "grayscale");
   }
 
   function hide(tile: Tile): Tile {
@@ -43,7 +43,7 @@ export const useTile = (): TileI => {
   }
 
   function showTileEffects(tileElement: any): void {
-    tileElement.classList.replace('grayscale', '!grayscale-0');
+    tileElement.classList.replace("grayscale", "!grayscale-0");
   }
 
   return {

@@ -1,7 +1,7 @@
-import { BaseSyntheticEvent, useEffect, useState } from 'react';
-import { useTile } from '../../hooks/tile-game/useTile';
-import { TileState } from '../../types';
-import { Tile } from '../../types';
+import { BaseSyntheticEvent, useEffect, useState } from "react";
+import { useTile } from "../../hooks/tile-game/useTile";
+import { TileState } from "../../types";
+import { Tile } from "../../types";
 
 function buildImagePath(location: string): string {
   return process.env.PUBLIC_URL + location;
@@ -36,24 +36,24 @@ export default function TileComponent({
             flex flex-col justify-center
             flip-card-inner
             relative transition duration-[0.8s]
-            ${flippable ? 'flippable' : 'idle'}
+            ${flippable ? "flippable" : "idle"}
           `}
         >
           <div className="flip-card-front">
             <div>
               <div className="flex justify-center">
                 <img
-                  src={buildImagePath('images/back-tile.png')}
+                  src={buildImagePath("images/back-tile.png")}
                   alt={`image-${index}`}
                   className={`
                     transition-all duration-[2s] ease-[cubic-bezier(0.035,0.795,0.05,0.95)]
                     rounded-sm
                     opacity-80
                     border-[1px] border-accent-s-900/80 
-                    ${extraClasses.join(', ')}
+                    ${extraClasses.join(", ")}
                     
                   `}
-                  fetchPriority={'high'}
+                  fetchPriority={"high"}
                 />
               </div>
             </div>
@@ -72,9 +72,9 @@ export default function TileComponent({
                 rounded-sm
                 opacity-80
                 border-[1px] border-accent-s-900/80 
-                ${extraClasses.join(', ')}
+                ${extraClasses.join(", ")}
               `}
-              fetchPriority={'high'}
+              fetchPriority={"high"}
             />
           </div>
         </div>
@@ -84,9 +84,9 @@ export default function TileComponent({
     switch (state) {
       case TileState.Hidden:
         const extraClasses = [
-          'hover:translate-x-3 hover:-translate-y-3',
-          `${index % 2 ? 'hover:sm:-rotate-6 hover:rounded-r-md sm:active:rotate-0' : 'hover:rounded-l-md'}`,
-          'hover:sm:rotate-6 hover:rounded-md hover:rounded-t-md hover:opacity-100',
+          "hover:translate-x-3 hover:-translate-y-3",
+          `${index % 2 ? "hover:sm:-rotate-6 hover:rounded-r-md sm:active:rotate-0" : "hover:rounded-l-md"}`,
+          "hover:sm:rotate-6 hover:rounded-md hover:rounded-t-md hover:opacity-100",
         ];
         return _render(imagePath, index, { extraClasses, flippable: false });
 
@@ -109,7 +109,7 @@ export default function TileComponent({
   useEffect(() => {
     if (state === TileState.Hidden) {
       setTimeout(() => {
-        setAssetImage('images/back-tile.png');
+        setAssetImage("images/back-tile.png");
       }, 300);
     } else {
       setAssetImage(asset.image);
@@ -123,7 +123,7 @@ export default function TileComponent({
       className={`
         transition duration-[0.75s]
         border-[1px] border-opacity-25 border-zinc-600 border-dashed
-        ${state === TileState.Hidden ? 'hover:border-2 hover:border-opacity-75 hover:rounded-lg hover:cursor-pointer' : ''}
+        ${state === TileState.Hidden ? "hover:border-2 hover:border-opacity-75 hover:rounded-lg hover:cursor-pointer" : ""}
         scale-100
         z-10
       `}

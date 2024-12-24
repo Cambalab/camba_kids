@@ -1,8 +1,8 @@
-import Board from './Board';
-import { Deck } from '../../types';
-import { useTileGame } from '../../hooks/tile-game/useTileGame';
-import { TileGame, TileGameProps } from '../../types/TileGame';
-import { ReactElement } from 'react';
+import Board from "./Board";
+import { Deck } from "../../types";
+import { useTileGame } from "../../hooks/tile-game/useTileGame";
+import { TileGame, TileGameProps } from "../../types/TileGame";
+import { ReactElement } from "react";
 
 export default function TileGameComponent({
   tiles,

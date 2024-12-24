@@ -1,6 +1,6 @@
-import { BaseSyntheticEvent } from 'react';
-import { TileAsset } from './TileAsset';
-import { TileI } from '../interfaces/Tile';
+import { BaseSyntheticEvent } from "react";
+import { TileAsset } from "./TileAsset";
+import { TileI } from "../interfaces/Tile";
 
 export enum TileState {
   Hidden,

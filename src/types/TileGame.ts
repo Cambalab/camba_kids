@@ -1,7 +1,7 @@
-import { BaseSyntheticEvent } from 'react';
-import { TileI } from '../interfaces';
-import { TileAsset } from './TileAsset';
-import { Deck } from './Deck';
+import { BaseSyntheticEvent } from "react";
+import { TileI } from "../interfaces";
+import { TileAsset } from "./TileAsset";
+import { Deck } from "./Deck";
 
 export type TileGameProps = {
   tiles: TileAsset[];

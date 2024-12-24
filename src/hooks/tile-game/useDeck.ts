@@ -1,4 +1,4 @@
-import { shuffleArray } from '../../utils';
+import { shuffleArray } from "../../utils";
 import {
   Tile,
   TileState,
@@ -6,10 +6,10 @@ import {
   TileAsset,
   DeckState,
   Outcome,
-} from '../../types';
-import { DeckI, TileI } from '../../interfaces';
-import { BaseSyntheticEvent } from 'react';
-import { useTile } from './useTile';
+} from "../../types";
+import { DeckI, TileI } from "../../interfaces";
+import { BaseSyntheticEvent } from "react";
+import { useTile } from "./useTile";
 
 export const useDeck = (): DeckI => {
   const {
@@ -171,7 +171,7 @@ export const useDeck = (): DeckI => {
 
     switch (selectedTiles.length) {
       case 0:
-        console.debug('No selected tiles: ', selectedTiles);
+        console.debug("No selected tiles: ", selectedTiles);
         _deck = _processTileSelection(_deck, tile);
         break;
 
@@ -191,7 +191,7 @@ export const useDeck = (): DeckI => {
         }
         // Did not guessed the tile
         if (_selectedTiles.length === 2) {
-          console.debug('Did not guessed the tile: ', tile);
+          console.debug("Did not guessed the tile: ", tile);
           // tileApi.showTile(e.target.parentNode)
           _deck = _revealSelectedTile(_deck, tile);
           _deck = {

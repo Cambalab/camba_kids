@@ -1,6 +1,6 @@
-import { BaseSyntheticEvent } from 'react';
-import { Deck, TileAsset, Tile } from '../types';
-import { TileI } from './Tile';
+import { BaseSyntheticEvent } from "react";
+import { Deck, TileAsset, Tile } from "../types";
+import { TileI } from "./Tile";
 
 export interface DeckI {
   init: (tiles: TileAsset[]) => Deck;

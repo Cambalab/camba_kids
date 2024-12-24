@@ -1,6 +1,6 @@
-import { TileAsset } from '../../types';
-import { TileAssetI } from '../../interfaces';
-import { extractUuid } from '../../utils';
+import { TileAsset } from "../../types";
+import { TileAssetI } from "../../interfaces";
+import { extractUuid } from "../../utils";
 
 export const useTileAsset = (): TileAssetI => {
   function create(image: string): TileAsset {
