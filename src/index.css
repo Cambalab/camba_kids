@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@import './css/fonts.css';
+@import './css/scrollbar.css';
+@import './css/boardgame.css';
+
+@layer base {
+  body {
+    @apply cursor-default m-0 bg-accent-s-800;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  a {
+    @apply text-accent-p-500;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  ::-moz-selection {
+    /* Code for Firefox */
+    @apply text-white bg-accent-p-500;
+  }
+
+  ::selection {
+    @apply text-white bg-accent-p-500;
+  }
 }
