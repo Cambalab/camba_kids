@@ -25,11 +25,11 @@ const useImages = (): { images: string[] } => {
     ];
 
     const kidsImages = [
-      "39766aa2-c9d0-420e-a3a8-3d7848902bb6.png",
+      "39766aa2-c9d0-420e-a3a8-3d7848902bb6.jpeg",
       "223e7ed3-e3b3-4479-bed9-f0c41b194a8f.png",
       "95aa649c-bc4c-4ff9-b2e5-4101a60eb454.png",
       "0d8c762b-d262-433f-81e4-3769f4dfd3f1.png",
-      "596da4d6-cabd-4c21-8d86-5e3562894ff6.png",
+      "596da4d6-cabd-4c21-8d86-5e3562894ff6.jpeg",
       "35ffcc50-8971-499c-81cc-4de7bfaffe3f.jpeg",
       "03b4ca87-3599-43f6-a699-36e41d25899c.jpeg",
       "7aef60ca-b680-4f87-b52e-5af69feb68a3.jpeg",
