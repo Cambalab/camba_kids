@@ -127,7 +127,7 @@ export const useDeck = (): DeckI => {
 
   function init(tiles: TileAsset[]): Deck {
     return {
-      tiles: (shuffleArray(tiles.concat(tiles)) as unknown as TileAsset[]).map(
+      tiles: (shuffleArray(tiles) as unknown as TileAsset[]).map(
         (tile: TileAsset, index: number) => initTile(tile, index),
       ),
       selectedTiles: [],

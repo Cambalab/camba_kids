@@ -1,4 +1,3 @@
-import livedj from './svg/live-dj-iso-black.svg';
 import { ReactComponent as Octocat } from './svg/github.svg';
 import './App.css';
 import useImages from './hooks/tile-game/useImages';
@@ -13,7 +12,7 @@ function App() {
   const { images } = useImages();
   const { create: createTileAsset } = useTileAsset();
 
-  const filteredImages = takeSome(images, 18);
+  const filteredImages = takeSome(images, 32);
   const tileAssets = filteredImages.map(
     (image: string): TileAssetT => createTileAsset(image),
   );

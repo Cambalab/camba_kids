@@ -53,7 +53,7 @@ export default function TileComponent({
                     ${extraClasses.join(', ')}
                     
                   `}
-                  fetchPriority={index < 16 ? 'high' : 'low'}
+                  fetchPriority={'high'}
                 />
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function TileComponent({
           "
           >
             <img
-              src={buildImagePath(imagePath)}
+              src={imagePath}
               alt={`image-${index}`}
               className={`
                 transition-all duration-[2s] ease-[cubic-bezier(0.035,0.795,0.05,0.95)]
@@ -74,7 +74,7 @@ export default function TileComponent({
                 border-[1px] border-accent-s-900/80 
                 ${extraClasses.join(', ')}
               `}
-              fetchPriority={index < 16 ? 'high' : 'low'}
+              fetchPriority={'high'}
             />
           </div>
         </div>
