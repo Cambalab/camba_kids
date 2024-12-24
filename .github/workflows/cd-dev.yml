@@ -5,7 +5,7 @@ on:
   workflow_run:
     workflows: ["CI"]
     branches: [dev]
-    types: 
+    types:
       - completed
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
         uses: dokku/github-action@master
         with:
           # specify the `main` branch as the remote branch to push to
-          branch: 'main'
+          branch: "main"
           git_remote_url: ${{ secrets.SSH_REMOTE_DEV_URL }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
